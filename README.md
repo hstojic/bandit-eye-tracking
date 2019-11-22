@@ -1,7 +1,10 @@
 # Instructions 
 
+This repository contains experimental software for experiments reported in an article "Uncertainty in learning, choice and visual fixation" by Hrvoje Stojic, Jacob Orquin, Peter Dayan, Raymond Dolan and Maarten Speekenbrink. Preprint can be found on [PsyArXiv](https://psyarxiv.com/zuge2). DOI: 10.31234/osf.io/zuge2
 
-This repository contains experimental software. The most relevant are the Python scripts:  
+Experiment consists of a bandit task where we also monitor participants' overt attention through eye tracking. Implementation is based on Python, relying heavily on [PsychoPy](https://www.psychopy.org/) library. Code was developed for EyeLink 1000 eye tracker by [SR Research](https://www.sr-research.com/), but it should be easily ported to other eye trackers. Everything was tested on a Linux operating system. Everyone is welcome to use the code, but please cite the paper above.
+
+The most relevant are the Python scripts:  
 - `bandit.py` script contains all the code related to the experiment  
 - `run_stationary.py` and `run_restless.py` are main scripts that execute the experiment, either the stationary or the restless (or nonstationary) version of the multi-armed bandit task  
 - `experiment_config_stationary.yaml` and `experiment_config_restless.yaml` contain the parameters of two versions of the experiment; these parameters change, for example, how long certain phases of the trial last, or what colors are used for certain stimuli  
